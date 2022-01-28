@@ -2,9 +2,11 @@
    This will make it easier to change them if needed. Do not forget to change
    the accent color in the meta file. makes it look nicer*/
 :root {
-  /* Purple */
+  /* Accent color = Purple */
   --accentColor: #4c3ba6;
-  /* Light Purple */
+  /* Dark version of accent color */
+  /*--accentColorDark: #FFFFFF;*/
+  /* Light version of the accent color = Light Purple */
   --accentColorLight: #aca4d0;
   /* Utralight Purple */
   --backgroundBody: #e1e1e8;
