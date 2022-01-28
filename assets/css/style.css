@@ -152,11 +152,6 @@ a:hover {
   padding: 15px;
 }
 
-.card-header-accent {
-  background-color: var(--accentColor);
-  color: var(--colorTextAccentColor);
-}
-
 .card p.index {
   margin: 0;
 }
