@@ -1,0 +1,193 @@
+/* I made varriables of all important paddings and colorTextSecondary
+   This will make it easier to change them if needed. */
+
+:root {
+  --accentPrimary: #4c3ba6;       /* Purple */
+  --accentSecondary: #aca4d0;     /* Light Purple */
+  --colorTextPrimary: white;
+  --colorTextSecondary: black;
+  --backgroundPrimary: #e1e1e8;   /* Utralight Purple */
+  --backgroundCard: #f8f8fe;      /* Not white, but close */
+  --paddingJumbotron: 16px;
+  --fontSizeJumbotron: 12px;
+  --fontColorJumbotron: white;
+  --bodyTextColor: black;
+  --fontColorCard: black;
+  --borderRadius: 15px;
+  --fontSizeCard: 16px;
+}
+
+body {
+  background-color: var(--backgroundPrimary);
+  padding-top: 70px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  color: var(--bodyTextColor) !important;
+}
+
+#main {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.jumbotron {
+  padding: var(--paddingJumbotron) 0;
+  background-color: var(--accentPrimary);
+  color: var(--colorTextPrimary);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16), 0 5px 8px rgba(0, 0, 0, 0.23);
+}
+
+.jumbotron p {
+  font-size: var(--fontSizeJumbotron) !important;
+}
+
+p,
+li {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.heading {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0);
+  color: var(--bodyTextColor) !important;
+}
+
+.card-content-1 p,
+.card-content-1 li {
+  font-size: var(--fontSizeCard);
+  line-height: 1.5 color: var(--fontColorCard) !important;
+}
+
+.card-title {
+  font-weight: 400;
+  margin: 0;
+  color: var(--accentPrimary) !important;
+}
+
+.card-title a {
+  transition: all 0.3s ease-out;
+}
+
+.card-title a:hover {
+  color: var(--accentPrimary) !important;
+}
+
+.card h6 {
+  margin-bottom: 0;
+}
+
+.container .text-muted {
+  margin: 12px 0;
+  font-size: 14px !important;
+}
+
+.navbar {
+  transition: box-shadow 0.4s ease-out;
+}
+
+.navbar-transparent {
+  background: var(--backgroundPrimary) !important;
+  color: var(--accentPrimary) !important;
+  padding-top: 10px !important;
+}
+
+.navbar-shadow {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .4) !important;
+}
+
+.nav li {
+  transition: all 0.4s ease-out;
+}
+
+.nav li:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 2px;
+}
+
+.navbar .navbar-nav>.active>a,
+.navbar .navbar-nav>.active>a:hover,
+.navbar .navbar-nav>.active>a:focus {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.navbar-brand-img img {
+  height: 35px;
+  margin-bottom: 1px;
+}
+
+.icon-bar {
+  color: var(--accentPrimary);
+}
+
+.btn-cv {
+  background-color: var(--accentPrimary);
+  color: var(--colorTextPrimary) !important;
+}
+
+.alert-cv {
+  border-radius: var(--borderRadius);
+  background-color: var(--accentSecondary);
+  color: var(--colorTextSecondary) !important;
+}
+
+.card {
+  border-radius: var(--borderRadius);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+  background-color: var(--backgroundCard);
+  color: var(--fontColorCard) !important;
+  margin-bottom: 15px;
+  word-wrap: break-word;
+}
+
+.card-image {
+  border-radius: var(--borderRadius);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card-content-1 {
+  padding: 15px;
+}
+
+.card p.index {
+  margin: 0;
+}
+
+.footer-icons {
+  color: var(--accentPrimary) !important;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-size: 32px;
+  float: right;
+  height: 100%;
+}
+
+.footer {
+  width: 100%;
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.3);
+  background-color: var(--backgroundCard);
+  color: var(--fontColorCard) !important;
+}
+
+.material-icons {
+    display:inline-flex;
+    vertical-align:top;
+}
+
+@media (max-width: 768px) {
+
+  .footer-icons,
+  .footer {
+    text-align: center;
+    color: var(accentPrimary);
+    float: none
+  }
+
+  .card-content-1 {
+    padding: 15px 15px;
+  }
+}
