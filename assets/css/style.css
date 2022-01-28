@@ -95,8 +95,8 @@ a:hover {
 }
 
 .navbar-transparent {
-  background: var(--backgroundBody) !important;
-  color: var(--accentColor) !important;
+  background: var(--accentColory) !important;
+  color: var(--colorTextAccentColor) !important;
   padding-top: 10px !important;
 }
 
@@ -125,7 +125,7 @@ a:hover {
 }
 
 .icon-bar {
-  color: var(--accentColor);
+  color: var(--colorTextAccentColor);
 }
 
 .btn-cv {
