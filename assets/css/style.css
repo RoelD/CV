@@ -1,4 +1,4 @@
-/* I made varriables of all important paddings and colorTextSecondary
+/* I made varriables of all important paddings and colors
    This will make it easier to change them if needed. Do not forget to change
    the accent color in the meta file. makes it look nicer*/
 
@@ -152,6 +152,11 @@ a:hover {
   padding: 15px;
 }
 
+.card-header-accent {
+  background-color: var(--accentColor);
+  color: var(--colorTextAccentColor);
+}
+
 .card p.index {
   margin: 0;
 }
@@ -182,7 +187,7 @@ a:hover {
   .footer-icons,
   .footer {
     text-align: center;
-    color: var(accentPrimary);
+    color: var(--accentColor);
     float: none
   }
 
