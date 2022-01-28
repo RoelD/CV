@@ -1,12 +1,15 @@
 /* I made varriables of all important paddings and colors
    This will make it easier to change them if needed. Do not forget to change
    the accent color in the meta file. makes it look nicer*/
-
 :root {
-  --accentColor: #4c3ba6;           /* Purple */
-  --accentColorLight: #aca4d0;      /* Light Purple */
-  --backgroundBody: #e1e1e8;        /* Utralight Purple */
-  --backgroundCard: #f8f8fe;        /* Not white, but close */
+  /* Purple */
+  --accentColor: #4c3ba6;
+  /* Light Purple */
+  --accentColorLight: #aca4d0;
+  /* Utralight Purple */
+  --backgroundBody: #e1e1e8;
+  /* Not white, but close */
+  --backgroundCard: #f8f8fe;
   --colorTextAccentColor: white;
   --colorTextAccentColorLight: black;
   --colorTextCard: black;
@@ -173,8 +176,8 @@ a:hover {
 }
 
 .material-icons {
-    display:inline-flex;
-    vertical-align:top;
+  display: inline-flex;
+  vertical-align: top;
 }
 
 @media (max-width: 768px) {
