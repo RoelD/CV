@@ -3,7 +3,7 @@
    the accent color in the meta file. makes it look nicer*/
 :root {
   /* Colors */
-  /* accentcolor = Dark Green */
+  /* accentDark is the darkest accentcolor. In this case dark greeb. */
   --accentDark: #237500;
   --accentMedium: #b0ff9e;
   --accentLight: #e1fbdd;
