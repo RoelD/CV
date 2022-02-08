@@ -2,19 +2,17 @@
    This will make it easier to change them if needed. Do not forget to change
    the accent color in the meta file. makes it look nicer*/
 :root {
-  /* Accent color = Purple */
-  --accentColor: #4c3ba6;
-  /* Dark version of accent color */
-  /*--accentColorDark: #FFFFFF;*/
-  /* Light version of the accent color = Light Purple */
-  --accentColorLight: #aca4d0;
-  /* Utralight Purple */
-  --backgroundBody: #e1e1e8;
-  /* Not white, but close */
-  --backgroundCard: #f8f8fe;
-  --colorTextAccentColor: white;
-  --colorTextAccentColorLight: black;
-  --colorTextCard: black;
+  /* Colors */
+  /* accentcolor = Dark Green */
+  --accentDark: #237500;
+  --accentMedium: #b0ff9e;
+  --accentLight: #e1fbdd;
+  --textLight: #ebf4e9;
+  --textDark: #181e17;
+  --bodyBackground: #dee5db;
+  --cardBackground: #f3fcf2;
+
+  /* Paddings, radius and fontsizes */
   --fontSizeJumbotron: 12px;
   --paddingJumbotron: 16px;
   --radiusBorder: 15px;
@@ -22,12 +20,12 @@
 }
 
 body {
-  background-color: var(--backgroundBody);
+  background-color: var(--bodyBackground);
   padding-top: 70px;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  color: var(--colorTextAccentColorLight) !important;
+  color: var(--textDark) !important;
 }
 
 #main {
@@ -37,8 +35,8 @@ body {
 
 .jumbotron {
   padding: var(--paddingJumbotron) 0;
-  background-color: var(--accentColor);
-  color: var(--colorTextAccentColor);
+  background-color: var(--accentDark);
+  color: var(--textLight);
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16), 0 5px 8px rgba(0, 0, 0, 0.23);
 }
 
@@ -58,19 +56,19 @@ a:hover {
 
 .heading {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0);
-  color: var(--colorTextAccentColorLight) !important;
+  color: var(--textDark) !important;
 }
 
 .card-content-1 p,
 .card-content-1 li {
   font-size: var(--fontSizeCard);
-  line-height: 1.5 color: var(--colorTextCard) !important;
+  line-height: 1.5 color: var(--textDark) !important;
 }
 
 .card-title {
   font-weight: 400;
   margin: 0;
-  color: var(--accentColor) !important;
+  color: var(--accentDark) !important;
 }
 
 .card-title a {
@@ -78,7 +76,7 @@ a:hover {
 }
 
 .card-title a:hover {
-  color: var(--accentColor) !important;
+  color: var(--accentDark) !important;
 }
 
 .container .text-muted {
@@ -91,8 +89,8 @@ a:hover {
 }
 
 .navbar-transparent {
-  background: var(--accentColor) !important;
-  color: var(--colorTextAccentColor) !important;
+  background: var(--accentDark) !important;
+  color: var(--textLight) !important;
   padding-top: 10px !important;
 }
 
@@ -121,25 +119,34 @@ a:hover {
 }
 
 .icon-bar {
-  color: var(--colorTextAccentColor);
+  color: var(--textLight);
 }
 
 .btn-cv {
-  background-color: var(--accentColor);
-  color: var(--colorTextAccentColor) !important;
+  background-color: var(--accentDark);
+  color: var(--textLight) !important;
 }
 
 .alert-cv {
   border-radius: var(--radiusBorder);
-  background-color: var(--accentColorLight);
-  color: var(--colorTextAccentColorLight) !important;
+  background-color: var(--accentMedium);
+  color: var(--textDark) !important;
 }
 
 .card {
   border-radius: var(--radiusBorder);
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
-  background-color: var(--backgroundCard);
-  color: var(--colorTextCard) !important;
+  background-color: var(--cardBackground);
+  color: var(--textDark) !important;
+  margin-bottom: 15px;
+  word-wrap: break-word;
+}
+
+.card-accent {
+  border-radius: var(--radiusBorder);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+  background-color: var(--accentLight);
+  color: var(--textDark) !important;
   margin-bottom: 15px;
   word-wrap: break-word;
 }
@@ -158,7 +165,7 @@ a:hover {
 }
 
 .footer-icons {
-  color: var(--accentColor) !important;
+  color: var(--accentDark) !important;
   padding-top: 14px;
   padding-bottom: 14px;
   font-size: 32px;
@@ -169,8 +176,8 @@ a:hover {
 .footer {
   width: 100%;
   box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.3);
-  background-color: var(--backgroundCard);
-  color: var(--colorTextCard) !important;
+  background-color: var(--cardBackground);
+  color: var(--textDark) !important;
 }
 
 .material-icons {
@@ -183,7 +190,7 @@ a:hover {
   .footer-icons,
   .footer {
     text-align: center;
-    color: var(--accentColor);
+    color: var(--accentDark);
     float: none
   }
 
