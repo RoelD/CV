@@ -54,6 +54,26 @@
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  jQuery.event.special.touchstart = {
+      setup: function( _, ns, handle ) {
+          this.addEventListener("touchstart", handle, { passive: !ns.includes("noPreventDefault") });
+      }
+  };
+  jQuery.event.special.touchmove = {
+      setup: function( _, ns, handle ) {
+          this.addEventListener("touchmove", handle, { passive: !ns.includes("noPreventDefault") });
+      }
+  };
+  jQuery.event.special.wheel = {
+      setup: function( _, ns, handle ){
+          this.addEventListener("wheel", handle, { passive: true });
+      }
+  };
+  jQuery.event.special.mousewheel = {
+      setup: function( _, ns, handle ){
+          this.addEventListener("mousewheel", handle, { passive: true });
+      }
+  };
   <script src="{{ site.baseurl }}/assets/js/jquery.easing.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="{{ site.baseurl }}/assets/js/material-kit.js"></script>
