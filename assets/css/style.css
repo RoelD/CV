@@ -127,6 +127,11 @@ a:hover {
   color: var(--textLight) !important;
 }
 
+.btn-cv-medium {
+  background-color: var(--accentMedium);
+  color: var(--textDark) !important;
+}
+
 .alert-cv {
   border-radius: var(--radiusBorder);
   background-color: var(--accentMedium);
