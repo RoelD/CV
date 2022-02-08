@@ -22,7 +22,7 @@
 body {
   background-color: var(--bodyBackground);
   padding-top: 70px;
-  display: inline-flex;
+  display: flex;
   min-height: 100vh;
   flex-direction: column;
   color: var(--textDark) !important;
