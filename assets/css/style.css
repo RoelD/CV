@@ -125,13 +125,11 @@ a:hover {
 .btn-cv {
   background-color: var(--accentDark);
   color: var(--textLight) !important;
-  font-size: var(--fontSizeCard);
 }
 
 .btn-cv-medium {
   background-color: var(--accentMedium);
   color: var(--textDark) !important;
-  font-size: var(--fontSizeCard);
 }
 
 .alert-cv {
