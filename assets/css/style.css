@@ -3,7 +3,7 @@
    the accent color in the meta file. makes it look nicer*/
 :root {
   /* Colors */
-  /* accentDark is the darkest accentcolor. In this case dark greeb. */
+  /* accentDark is the darkest accentcolor. In this case dark green. */
   --accentDark: #237500;
   --accentMedium: #b0ff9e;
   --accentLight: #e1fbdd;
@@ -37,7 +37,7 @@ body {
   padding: var(--paddingJumbotron) 0;
   background-color: var(--accentDark);
   color: var(--textLight);
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16), 0 5px 8px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .jumbotron p {
@@ -55,7 +55,7 @@ a:hover {
 }
 
 .heading {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0);
+  text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0);
   color: var(--textDark) !important;
 }
 
@@ -66,7 +66,7 @@ a:hover {
 }
 
 .card-title {
-  font-weight: 400;
+  font-weight: 350;
   margin: 0;
   color: var(--accentDark) !important;
 }
@@ -81,7 +81,7 @@ a:hover {
 
 .container .text-muted {
   margin: 12px 0;
-  font-size: 14px !important;
+  font-size: var(--fontSizeCard) !important;
 }
 
 .navbar {
@@ -95,7 +95,7 @@ a:hover {
 }
 
 .navbar-shadow {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, .4) !important;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .4) !important;
 }
 
 .nav li {
@@ -114,7 +114,7 @@ a:hover {
 }
 
 .navbar-brand-img img {
-  height: 35px;
+  height: 30px;
   margin-bottom: 1px;
 }
 
@@ -140,29 +140,29 @@ a:hover {
 
 .card {
   border-radius: var(--radiusBorder);
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
   background-color: var(--cardBackground);
   color: var(--textDark) !important;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   word-wrap: break-word;
 }
 
 .card-accent {
   border-radius: var(--radiusBorder);
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
   background-color: var(--accentLight);
   color: var(--textDark) !important;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   word-wrap: break-word;
 }
 
 .card-image {
   border-radius: var(--radiusBorder);
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
 }
 
 .card-content-1 {
-  padding: 15px;
+  padding: 13px;
 }
 
 .card p.index {
@@ -171,16 +171,16 @@ a:hover {
 
 .footer-icons {
   color: var(--accentDark) !important;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  font-size: 32px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-size: 30px;
   float: right;
   height: 100%;
 }
 
 .footer {
   width: 100%;
-  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
   background-color: var(--cardBackground);
   color: var(--textDark) !important;
 }
@@ -200,6 +200,6 @@ a:hover {
   }
 
   .card-content-1 {
-    padding: 15px 15px;
+    padding: 13px 13px;
   }
 }
