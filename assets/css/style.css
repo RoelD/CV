@@ -79,11 +79,6 @@ a:hover {
   color: var(--accentDark) !important;
 }
 
-.container .text-muted {
-  margin: 12px 0;
-  font-size: var(--fontSizeCard) !important;
-}
-
 .navbar {
   transition: box-shadow 0.4s ease-out;
 }
