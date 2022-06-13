@@ -1,62 +1,103 @@
 <!DOCTYPE html>
 <html lang="nl">
+  <head>
+    <title>
+      {% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{
+      site.description }}
+    </title>
 
-<head>
-  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    {% include meta.html %}
 
-  {% include meta.html %}
+    <link
+      rel="stylesheet"
+      href="{{ site.baseurl }}/assets/css/Bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ site.baseurl }}/assets/css/material-kit.css"
+    />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="shortcut icon"
+      href="{{ site.baseurl }}/assets/images/curriculum.png"
+    />
 
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/Bootstrap.min.css" />
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/material-kit.css" />
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  <link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/curriculum.png">
+    {% seo %}
+  </head>
 
-  {% seo %}
-</head>
-
-<body id="page-top">
-  <nav class="navbar navbar-transparent navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed navbarButton" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <i class="material-icons">menu</i>
-        </button>
-        <a class="navbar-brand" href="{{ site.baseurl }}"><b>Curriculum Vitae / Resume</b></a>
+  <body id="page-top">
+    <nav class="navbar navbar-transparent navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed navbarButton"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
+            <i class="material-icons">menu</i>
+          </button>
+          <a class="navbar-brand" href="{{ site.baseurl }}"
+            ><b>Curriculum Vitae / Resume</b></a
+          >
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="{{ site.baseurl }}/"
+                ><i class="material-icons">language</i> Nederlands</a
+              >
+            </li>
+            <li>
+              <a href="{{ site.baseurl }}/indexEng"
+                ><i class="material-icons">language</i> English</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="{{ site.baseurl }}/"><i class="material-icons">language</i> Nederlands</a></li>
-          <li><a href="{{ site.baseurl }}/indexEng"><i class="material-icons">language</i> English</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    </nav>
 
-  <div id="main" role="main">
-    {{ content }}
-  </div>
+    <div id="main" role="main">{{ content }}</div>
 
-  <footer class="footer">
-    <div class="container-fluid">
-      <p><b>&copy; 2016 - {{ site.time | date: '%Y' }} Roel Deckers </b><br>
-        Deze site wordt gegenereerd via GitHub pages. De code is te vinden op mijn GitHub pagina.<br>
-        This site is being generated through GitHub pages. The source code can be found on my GitHub page.</p>
-      <div class="col-sm-6">
-        <p class="text-center visible-xs">
-          <a href="#page-top" class="btn btn-cv btn-fab btn-round page-scroll"><i class="material-icons">arrow_upward</i></a>
+    <footer class="footer">
+      <div class="container-fluid">
+        <p>
+          <b>&copy; 2016 - {{ site.time | date: '%Y' }} Roel Deckers </b><br />
+          Deze site wordt gegenereerd via GitHub pages. De code is te vinden op
+          mijn GitHub pagina.<br />
+          This site is being generated through GitHub pages. The source code can
+          be found on my GitHub page.
         </p>
+        <div class="col-sm-6">
+          <p class="text-center visible-xs">
+            <a href="#page-top" class="btn btn-cv btn-fab btn-round page-scroll"
+              ><i class="material-icons">arrow_upward</i></a
+            >
+          </p>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/jquery.easing.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="{{ site.baseurl }}/assets/js/material-kit.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/material.min.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/scroll.js"></script>
-</body>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/jquery.easing.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="{{ site.baseurl }}/assets/js/material-kit.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/material.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/scroll.js"></script>
+  </body>
 </html>
