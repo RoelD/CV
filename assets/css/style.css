@@ -62,7 +62,8 @@ a:hover {
 .card-content-1 p,
 .card-content-1 li {
   font-size: var(--fontSizeCard);
-  line-height: 1.5 color: var(--textDark) !important;
+  line-height: 1.5;
+  color: var(--textDark) !important;
 }
 
 .card-title {
