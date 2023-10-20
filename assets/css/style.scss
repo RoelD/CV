@@ -1,0 +1,193 @@
+// I made variables of all important paddings and colors
+// This will make it easier to change them if needed. Do not forget to change
+// the accent color in the meta file. makes it look nicer
+
+// Colors
+$accentDark: #237500;
+$accentMedium: #b0ff9e;
+$accentLight: #e1fbdd;
+$textLight: #ebf4e9;
+$textDark: #181e17;
+$bodyBackground: #dee5db;
+$cardBackground: #f3fcf2;
+
+// Paddings, radius, and font sizes
+$fontSizeJumbotron: 16px;
+$paddingJumbotron: 16px;
+$radiusBorder: 15px;
+$fontSizeCard: 16px;
+
+body {
+  background-color: $bodyBackground;
+  padding-top: 70px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  color: $textDark !important;
+
+  #main {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+}
+
+.jumbotron {
+  padding: $paddingJumbotron 0;
+  background-color: $accentDark;
+  color: $textLight;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+  p {
+    font-size: $fontSizeJumbotron !important;
+  }
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.heading {
+  text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0);
+  color: $textDark !important;
+}
+
+.card-content-1 {
+  p, li {
+    font-size: $fontSizeCard;
+    line-height: 1.5;
+    color: $textDark !important;
+  }
+}
+
+.card-title {
+  font-weight: 350;
+  margin: 0;
+  color: $accentDark !important;
+
+  a {
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      color: $accentDark !important;
+    }
+  }
+}
+
+.navbar {
+  transition: box-shadow 0.4s ease-out;
+
+  &.navbar-transparent {
+    background: $accentDark !important;
+    color: $textLight !important;
+    padding-top: 10px !important;
+  }
+
+  &.navbar-shadow {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .4) !important;
+  }
+
+  .navbar-nav {
+    >.active>a {
+      background-color: rgba(0, 0, 0, 0.04);
+
+      &:hover, &:focus {
+        background-color: rgba(0, 0, 0, 0.04);
+      }
+    }
+  }
+
+  .navbar-brand-img img {
+    height: 30px;
+    margin-bottom: 1px;
+  }
+
+  .icon-bar {
+    color: $textLight;
+  }
+}
+
+.nav {
+  li {
+    transition: all 0.4s ease-out;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.02);
+      border-radius: 2px;
+    }
+  }
+}
+
+.btn-cv {
+  background-color: $accentDark;
+  color: $textLight !important;
+}
+
+.btn-cv-medium {
+  background-color: $accentMedium;
+  color: $textDark !important;
+}
+
+.alert-cv {
+  border-radius: $radiusBorder;
+  background-color: $accentMedium;
+  color: $textDark !important;
+}
+
+.card {
+  border-radius: $radiusBorder;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  background-color: $cardBackground;
+  color: $textDark !important;
+  margin-bottom: 13px;
+  word-wrap: break-word;
+
+  &.card-accent {
+    background-color: $accentLight;
+  }
+
+  &.card-image {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  p.index {
+    margin: 0;
+  }
+}
+
+.footer-icons {
+  color: $accentDark !important;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-size: 30px;
+  float: right;
+  height: 100%;
+}
+
+.footer {
+  width: 100%;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+  background-color: $cardBackground;
+  color: $textDark !important;
+}
+
+.material-icons {
+  display: inline-flex;
+  vertical-align: top;
+}
+
+@media (max-width: 768px) {
+  .footer-icons, .footer {
+    text-align: center;
+    color: $accentDark;
+    float: none;
+  }
+
+  .card-content-1 {
+    padding: 13px 13px;
+  }
+}
