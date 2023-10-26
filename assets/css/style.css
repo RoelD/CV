@@ -8,9 +8,10 @@
   --accentMedium: #009AFE;
   --accentLight: #71FAC6;
   --textLight: #F5F2FF;
-  --textDark: #5D0073;
+  --textDark: #00002E;
   --bodyBackground: #dee5db;
   --cardBackground: #f3fcf2;
+  --alertBackground: #FFAB03;
 
   /* Paddings, radius and fontsizes */
   --fontSizeJumbotron: 16px;
