@@ -4,11 +4,11 @@
 :root {
   /* Colors */
   /* accentDark is the darkest accentcolor. In this case dark green. */
-  --accentDark: #237500;
-  --accentMedium: #b0ff9e;
-  --accentLight: #e1fbdd;
-  --textLight: #ebf4e9;
-  --textDark: #181e17;
+  --accentDark: #000030;
+  --accentMedium: #009AFE;
+  --accentLight: #71FAC6;
+  --textLight: #F5F2FF;
+  --textDark: #5D0073;
   --bodyBackground: #dee5db;
   --cardBackground: #f3fcf2;
 
