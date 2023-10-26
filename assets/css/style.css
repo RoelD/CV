@@ -95,27 +95,6 @@ a:hover {
   box-shadow: 0 3px 8px rgba(0, 0, 0, .4) !important;
 }
 
-.navbar-brand {
-  display: inline-block;
-  white-space: nowrap;
-  position: relative;
-  color: var(--textLight);
-  height: 50px;
-  font-size: 1.125rem;
-  line-height: 30px;
-  padding: 14px 15px 6px;
-
-  &:hover,
-  &:focus {
-    text-decoration: none;
-  }
-
-  svg {
-    height: 20px;
-  }
-
-}
-
 .nav li {
   transition: all 0.4s ease-out;
 }
@@ -129,6 +108,11 @@ a:hover {
 .navbar .navbar-nav>.active>a:hover,
 .navbar .navbar-nav>.active>a:focus {
   background-color: rgba(0, 0, 0, 0.04);
+}
+
+.navbar-brand-img img {
+  height: 30px;
+  margin-bottom: 1px;
 }
 
 .icon-bar {
