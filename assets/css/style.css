@@ -131,7 +131,7 @@ a:hover {
 
 .alert-cv {
   border-radius: var(--radiusBorder);
-  background-color: var(--accentMedium);
+  background-color: var(--alertBackground);
   color: var(--textDark) !important;
 }
 
