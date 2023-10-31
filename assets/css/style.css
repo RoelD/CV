@@ -188,6 +188,12 @@ a:hover {
   color: var(--textDark) !important;
 }
 
+.footer svg {
+  display: inline-flex;
+  padding-left: 0;
+  height: 150px;
+}
+
 .material-icons {
   display: inline-flex;
   vertical-align: top;
