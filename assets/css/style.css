@@ -48,7 +48,7 @@ body {
 .jumbotron svg {
   display: inline-flex;
   flex-direction: column;
-  float: none;
+  float:left;
   height: 300px;
 }
 
