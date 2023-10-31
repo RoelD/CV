@@ -46,9 +46,8 @@ body {
 }
 
 .jumbotron svg {
-  display: inline-block;
-  position: relative;
-  height: 200px;
+  display: flex;
+  height: 300px;
 }
 
 p,
