@@ -200,3 +200,8 @@ a:hover {
     padding: 13px 13px;
   }
 }
+
+svg {
+  width: 100% !important;
+  height: 100% !important;
+}
