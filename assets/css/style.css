@@ -46,10 +46,11 @@ body {
 }
 
 .jumbotron svg {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
-  float:left;
+  position: relative;
   height: 300px;
+  padding-left: 0;
 }
 
 p,
