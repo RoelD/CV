@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://roeld.github.io/CV/sitemap.xml

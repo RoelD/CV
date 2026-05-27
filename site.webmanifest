@@ -1,0 +1,22 @@
+{
+  "name": "Roel Deckers - Curriculum Vitae",
+  "short_name": "CV Roel",
+  "description": "Online curriculum vitae van Roel Deckers.",
+  "start_url": "/CV/",
+  "scope": "/CV/",
+  "display": "standalone",
+  "background_color": "#fff8f7",
+  "theme_color": "#b3261e",
+  "icons": [
+    {
+      "src": "/CV/assets/icons/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/CV/assets/icons/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

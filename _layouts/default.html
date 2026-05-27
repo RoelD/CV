@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'nl' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#b3261e">
+    <meta name="color-scheme" content="light dark">
+    <script>
+      (function () {
+        var storedTheme = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = storedTheme || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      }());
+    </script>
+
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+
+    {% seo %}
+
+    <link rel="canonical" href="{{ page.canonical_url | default: page.url | absolute_url }}">
+    <link rel="alternate" hreflang="nl" href="{{ '/' | absolute_url }}">
+    <link rel="alternate" hreflang="en" href="{{ '/indexEng/' | absolute_url }}">
+    <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ page.title | default: site.name }}">
+    <meta property="og:description" content="{{ page.description | default: site.description }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ '/assets/images/og-image.png' | absolute_url }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.title | default: site.name }}">
+    <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+    <meta name="twitter:image" content="{{ '/assets/images/og-image.png' | absolute_url }}">
+
+    <link rel="icon" href="{{ '/assets/faviconlogo.png' | relative_url }}" type="image/png">
+    <link rel="apple-touch-icon" href="{{ '/assets/icons/apple-touch-icon.png' | relative_url }}">
+    <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
+
+    <link rel="preload" href="{{ '/assets/css/style.min.css' | relative_url }}" as="style">
+    <link rel="stylesheet" href="{{ '/assets/css/style.min.css' | relative_url }}">
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Direct naar inhoud</a>
+
+    <header class="top-app-bar" role="banner">
+      <nav class="nav-rail" aria-label="Hoofdnavigatie">
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="Naar de startpagina">
+          <span class="brand-mark" aria-hidden="true"><img src="{{ '/assets/images/avatar-icon.png' | relative_url }}" alt="" width="48" height="48"></span>
+          <span class="brand-copy">
+            <span class="brand-title">Roel Deckers</span>
+            <span class="brand-subtitle">Curriculum Vitae</span>
+          </span>
+        </a>
+
+        <div class="nav-actions" aria-label="Snelle acties">
+          <a class="chip-link" href="{{ site.cv_pdf_url | relative_url }}" aria-label="Download CV als PDF">
+            <span aria-hidden="true">↓</span>
+            PDF
+          </a>
+          <button class="chip-link theme-toggle" type="button" aria-label="Schakel donkere modus" aria-pressed="false" data-theme-toggle>
+            <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+            <span class="theme-toggle-text">Thema</span>
+          </button>
+          <a class="chip-link" href="{{ '/' | relative_url }}" hreflang="nl">NL</a>
+          <a class="chip-link" href="{{ '/indexEng' | relative_url }}" hreflang="en">EN</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main" class="page-shell" role="main">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-card">
+        <div>
+          <strong>Roel Deckers</strong>
+          <span>© 2016 - {{ site.time | date: '%Y' }} · GitHub Pages</span>
+        </div>
+        <a class="floating-action" href="#top" aria-label="Terug naar boven">↑</a>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var root = document.documentElement;
+        var toggle = document.querySelector('[data-theme-toggle]');
+        var metaTheme = document.querySelector('meta[name="theme-color"]');
+        var lightColor = '#b3261e';
+        var darkColor = '#ffb4a8';
+
+        function applyTheme(theme) {
+          root.setAttribute('data-theme', theme);
+          if (metaTheme) {
+            metaTheme.setAttribute('content', theme === 'dark' ? darkColor : lightColor);
+          }
+          if (toggle) {
+            var isDark = theme === 'dark';
+            toggle.setAttribute('aria-pressed', String(isDark));
+            toggle.querySelector('.theme-toggle-icon').textContent = isDark ? '☀' : '◐';
+            toggle.querySelector('.theme-toggle-text').textContent = isDark ? 'Licht' : 'Donker';
+          }
+        }
+
+        applyTheme(root.getAttribute('data-theme') || 'light');
+
+        if (toggle) {
+          toggle.addEventListener('click', function () {
+            var nextTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            localStorage.setItem('theme', nextTheme);
+            applyTheme(nextTheme);
+          });
+        }
+      }());
+    </script>
+  </body>
+</html>

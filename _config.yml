@@ -1,0 +1,37 @@
+name: Roel Deckers
+description: CV voor Roel Deckers / Resume for Roel Deckers
+
+url: "https://roeld.github.io"
+baseurl: "/CV-ChatGPT"
+certifurl: "https://roeld.github.io/CV-ChatGPT/assets/certificates"
+cv_pdf_url: "/assets/certificates/CV_Roel_Deckers.pdf"
+
+timezone: Europe/Amsterdam
+permalink: /:title/
+version: v5.0.0-md3-expressive
+
+logo: /assets/faviconlogo.png
+social:
+  name: Roel Deckers
+  links:
+    - https://github.com/roeld
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .git
+  - .gitattributes
