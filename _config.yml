@@ -2,8 +2,8 @@ name: Roel Deckers
 description: CV voor Roel Deckers / Resume for Roel Deckers
 
 url: "https://roeld.github.io"
-baseurl: "/CV-ChatGPT"
-certifurl: "https://roeld.github.io/CV-ChatGPT/assets/certificates"
+baseurl: "/CV"
+certifurl: "https://roeld.github.io/CV/assets/certificates"
 cv_pdf_url: "/assets/certificates/CV_Roel_Deckers.pdf"
 
 timezone: Europe/Amsterdam

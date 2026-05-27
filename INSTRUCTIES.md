@@ -55,3 +55,5 @@ cv_pdf_url: "/assets/certificates/CV_Roel_Deckers.pdf"
 - Interesses-kaart rood gemaakt in plaats van paars/blauw.
 - Statusregels “Beschikbaar voor contact” en “Open to contact” verwijderd.
 - Donkere modus toegevoegd via globale navigatie-toggle met volledige CSS-varianten.
+
+- Alle resterende groene/mint/blauwgroene accenten vervangen door warme rood-, coral- en amberaccenten.
